@@ -1,0 +1,29 @@
+//BEGINNING OF THE PROGRAM
+//Declarations
+Game game1
+
+Player pl1
+Player pl2
+
+Strategy strategypl1 [move1,move2]
+Strategy strategypl2 [move4,move5,move6]
+
+Outcomes outcomes1 [[1/5,1/6,1/9],[2/5,2/6,2/9]]
+
+//Body
+
+ASSOCIATE pl1 strategypl1
+ASSOCIATE pl2 strategypl2
+LINK game1 pl1 pl2
+LINK game1 outcomes1
+
+Player pl3
+
+Player player
+
+//Output stuff
+
+
+nash game1
+
+best_res pl1 pl2 move3

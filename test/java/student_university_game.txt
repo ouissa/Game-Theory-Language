@@ -1,0 +1,30 @@
+//Example for testing 1
+
+//DECLARATIONS
+
+Game gm
+
+Player student
+Player university
+
+Strategy stu_str [hardwork laziness]
+Strategy uni_str [goodProfessors badInfrastructure]
+
+Outcomes theOutcomes [[1/1 0/0],[0/0 -1/-1]]
+
+//BODY
+
+ASSOCIATE student stu_str
+ASSOCIATE university uni_str
+
+LINK gm student university
+LINK gm theOutcomes
+
+
+// USER REQUESTS
+
+nash gm
+
+pareto gm
+
+best_res university student laziness
